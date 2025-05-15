@@ -545,7 +545,7 @@ import product7 from "./img/skirting/anodized-aluminum-profile-500x500.webp";
 
 // PDF brochures
 import p9 from "./img/skirting/modular-skirting-illusion-recessed.pdf";
-import p10 from "./img/skirting/aluminum-screw-on-skirting.pdf";
+// import p10 from "./img/skirting/aluminum-screw-on-skirting.pdf";
 
 const Skirting = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
