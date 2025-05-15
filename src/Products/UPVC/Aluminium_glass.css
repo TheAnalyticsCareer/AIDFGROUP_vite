@@ -1,0 +1,435 @@
+/* Global Reset for Aluminium Component */
+.aluminium-component * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Color Variables */
+.aluminium-component {
+  --e-global-color-primary: #6EC1E4;
+  --e-global-color-secondary: #54595F;
+  --e-global-color-text: #7A7A7A;
+  --e-global-color-accent: #61CE70;
+  --e-global-color-4f8f067: #E90000;
+  --e-global-color-401d40b: #FFFFFF;
+  --e-global-color-43f3d89: #000000;
+  --e-global-color-2434ce4: #2A2A2A;
+  --e-global-color-a193bd8: #F1F1F1;
+  --e-global-color-ed79663: #FAFAFA;
+  
+  /* Aliases for easier reference */
+  --primary: var(--e-global-color-primary);
+  --secondary: var(--e-global-color-secondary);
+  --text: var(--e-global-color-text);
+  --accent: var(--e-global-color-accent);
+  --error: var(--e-global-color-4f8f067);
+  --white: var(--e-global-color-401d40b);
+  --black: var(--e-global-color-43f3d89);
+  --dark-gray: var(--e-global-color-2434ce4);
+  --light-gray: var(--e-global-color-a193bd8);
+  --off-white: var(--e-global-color-ed79663);
+  
+  color: var(--dark-gray);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.aluminium-hero-section {
+  position: relative;
+  height: 80vh;
+  max-height: 800px;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.aluminium-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.aluminium-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aluminium-hero-content {
+  text-align: center;
+  color: var(--white);
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.aluminium-hero-content h1 {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+/* Container */
+.aluminium-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Section Title */
+.aluminium-section-title {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: var(--dark-gray);
+  position: relative;
+  display: inline-block;
+}
+
+.aluminium-section-title:after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: var(--primary);
+  border-radius: 2px;
+}
+
+/* Product Sections */
+.aluminium-product-section {
+  padding: 1rem 0;
+  background: var(--off-white);
+}
+
+.aluminium-product-section:nth-child(even) {
+  background: var(--white);
+}
+
+/* Product Grid */
+.aluminium-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+/* Product Card */
+.aluminium-product-card {
+  background: var(--white);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.aluminium-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.aluminium-product-image {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.aluminium-product-content {
+  padding: 1.5rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.aluminium-product-content h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+  color: var(--dark-gray);
+}
+
+.aluminium-product-description {
+  color: #736b6b;
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  flex: 1;
+  height: 20rem;
+}
+
+.aluminium-product-price {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+.aluminium-product-price span {
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.aluminium-product-details {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.aluminium-product-details li {
+  display: flex;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.aluminium-product-details li span {
+  font-weight: 600;
+  color: var(--dark-gray);
+  min-width: 100px;
+  display: inline-block;
+}
+
+.aluminium-product-actions {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: auto;
+}
+
+.aluminium-quote-button {
+  flex: 1;
+  padding: 0.75rem;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.aluminium-quote-button:hover {
+  background: var(--dark-gray);
+}
+
+.aluminium-brochure-button {
+  flex: 1;
+  padding: 0.75rem;
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.aluminium-brochure-button:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* Modal */
+.aluminium-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.aluminium-modal-content {
+  background: var(--white);
+  border-radius: 12px;
+  width: 100%;
+  max-width: 800px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.aluminium-modal-close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--text);
+  z-index: 10;
+}
+
+.aluminium-modal-close:hover {
+  color: var(--dark-gray);
+}
+
+.aluminium-product-info {
+  padding: 2rem;
+  background: var(--off-white);
+}
+
+.aluminium-modal-product-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+}
+
+.aluminium-product-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-gray);
+}
+
+.aluminium-modal-description {
+  color: var(--text);
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+}
+
+.aluminium-modal-price {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 1.5rem;
+}
+
+.aluminium-modal-price span {
+  font-size: 1rem;
+  color: var(--text);
+  font-weight: 400;
+}
+
+.aluminium-modal-specs {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.aluminium-modal-specs li {
+  display: flex;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.aluminium-modal-specs li span {
+  font-weight: 600;
+  color: var(--dark-gray);
+  min-width: 120px;
+  display: inline-block;
+}
+
+.aluminium-contact-form {
+  padding: 2rem;
+}
+
+.aluminium-contact-message {
+  color: var(--text);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.aluminium-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.aluminium-form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--dark-gray);
+}
+
+.aluminium-form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.aluminium-form-input:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(110, 193, 228, 0.2);
+}
+
+.aluminium-submit-button {
+  width: 100%;
+  padding: 0.75rem;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.aluminium-submit-button:hover {
+  background: var(--dark-gray);
+}
+
+.aluminium-submit-button:disabled {
+  background: var(--light-gray);
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .aluminium-hero-section {
+    height: 60vh;
+  }
+  
+  .aluminium-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .aluminium-modal-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .aluminium-product-info,
+  .aluminium-contact-form {
+    padding: 1.5rem;
+  }
+
+  .aluminium-product-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .aluminium-product-grid {
+    grid-template-columns: 1fr;
+  }
+}

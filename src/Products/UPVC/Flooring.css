@@ -1,0 +1,487 @@
+/* Flooring Component Styles - Scoped to avoid conflicts */
+.flooring-component {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* Hero Section */
+.flooring-hero-section {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  min-height: 400px;
+  overflow: hidden;
+}
+
+.flooring-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.flooring-hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flooring-hero-content {
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+  max-width: 800px;
+}
+
+.flooring-hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.flooring-hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Container */
+.flooring-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 20px;
+  padding-top: 64px;
+}
+
+/* Section Titles */
+.flooring-section-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #222;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.flooring-section-title::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #0066cc;
+}
+
+.flooring-section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Category Grid */
+.flooring-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 3rem 0;
+}
+
+.flooring-category-item {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.flooring-category-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.flooring-category-item.active {
+  box-shadow: 0 0 0 3px #0066cc;
+}
+
+.flooring-category-image-wrapper {
+  height: 200px;
+  overflow: hidden;
+}
+
+.flooring-category-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.flooring-category-item:hover .flooring-category-image {
+  transform: scale(1.05);
+}
+
+.flooring-category-content {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.flooring-category-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+.flooring-category-content p {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Product Grid */
+.flooring-product-section {
+  /* padding: 4rem 0; */
+  background-color: #f9f9f9;
+  scroll-margin-top: 80px;
+}
+
+.flooring-product-section:nth-child(even) {
+  background-color: #fff;
+}
+
+.flooring-product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Product Card */
+.flooring-product-card {
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flooring-product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.flooring-product-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.flooring-product-content {
+  padding: 1.5rem;
+}
+
+.flooring-product-content h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.75rem;
+  color: #222;
+}
+
+.flooring-product-description {
+  color: #666;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  /* overflow: hidden; */
+  height: 20rem;
+}
+
+.flooring-product-price {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #0066cc;
+  margin-bottom: 1rem;
+}
+
+.flooring-product-details {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.flooring-product-details li {
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  display: flex;
+}
+
+.flooring-product-details li span {
+  font-weight: 600;
+  color: #444;
+  min-width: 120px;
+  display: inline-block;
+}
+
+.flooring-product-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Buttons */
+.flooring-quote-button {
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flooring-quote-button:hover {
+  background-color: #0052a3;
+}
+
+.flooring-brochure-button {
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.flooring-brochure-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Modal */
+.flooring-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.flooring-modal-content {
+  background: white;
+  border-radius: 8px;
+  max-width: 1000px;
+  width: 100%;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.flooring-modal-close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+  z-index: 10;
+}
+
+.flooring-modal-close:hover {
+  color: #333;
+}
+
+.flooring-product-info {
+  padding: 2rem;
+}
+
+.flooring-modal-product-image {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 1.5rem;
+}
+
+.flooring-modal-description {
+  color: #666;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.flooring-modal-price {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #0066cc;
+  margin-bottom: 1.5rem;
+}
+
+.flooring-modal-specs {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 1.5rem;
+  columns: 2;
+  column-gap: 2rem;
+}
+
+.flooring-modal-specs li {
+  margin-bottom: 0.75rem;
+  break-inside: avoid;
+}
+
+.flooring-modal-specs span {
+  font-weight: 600;
+  color: #444;
+}
+
+.flooring-contact-form {
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.flooring-contact-message {
+  font-size: 1.1rem;
+  color: #444;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+/* Form */
+.flooring-form-group {
+  margin-bottom: 1.5rem;
+}
+
+.flooring-form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.flooring-form-input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.flooring-form-input:focus {
+  outline: none;
+  border-color: #0066cc;
+  box-shadow: 0 0 0 2px rgba(0, 102, 204, 0.2);
+}
+
+.flooring-submit-button {
+  width: 100%;
+  background-color: #0066cc;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.flooring-submit-button:hover {
+  background-color: #0052a3;
+}
+
+.flooring-submit-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .flooring-hero-content h1 {
+    font-size: 3.5rem;
+  }
+
+  .flooring-hero-content p {
+    font-size: 1.4rem;
+  }
+
+  .flooring-section-title {
+    font-size: 2.5rem;
+  }
+
+  .flooring-modal-content {
+    flex-direction: row;
+  }
+
+  .flooring-product-info {
+    flex: 1;
+    padding-right: 1rem;
+  }
+
+  .flooring-contact-form {
+    flex: 1;
+    padding-left: 1rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .flooring-category-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flooring-product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .flooring-modal-specs {
+    columns: 1;
+  }
+
+  .flooring-product-actions {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .flooring-hero-content h1 {
+    font-size: 2rem;
+  }
+
+  .flooring-hero-content p {
+    font-size: 1rem;
+  }
+
+  .flooring-section-title {
+    font-size: 1.8rem;
+  }
+}
