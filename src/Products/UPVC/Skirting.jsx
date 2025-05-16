@@ -1,5 +1,3 @@
-
-
 // import React, { useState, useEffect, useRef } from "react";
 // import AOS from "aos";
 // import "aos/dist/aos.css";
@@ -59,7 +57,7 @@
 //     const productKey = Object.keys(products).find(
 //       (key) => products[key].name === productName
 //     );
-    
+
 //     if (productKey && products[productKey].brochure) {
 //       window.open(products[productKey].brochure, "_blank");
 //     } else {
@@ -228,7 +226,7 @@
 //         { label: "Minimum Order Quantity", value: "50 Kg" },
 //       ],
 //     },
-    
+
 //   };
 
 //   const openModal = (productKey) => {
@@ -287,17 +285,6 @@
 //     <div className="skirting-component">
 //       {/* Hero Banner Section */}
 
-
-
-
-
-
-
-
-
-
-
-      
 //       <section className="skirting-hero-section">
 //         <img
 //           src={heroImage}
@@ -313,16 +300,6 @@
 //           </div>
 //         </div>
 
-
-
-
-
-
-
-
-
-
-        
 //       </section>
 
 //       {/* Products Section */}
@@ -427,25 +404,6 @@
 
 // export default Skirting;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 import React, { useState, useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -488,7 +446,12 @@ const Skirting = () => {
     onSubmit: async (values) => {
       setIsSubmitting(true);
       try {
-        await axios.post(`https://aidf-backend-vite.onrender.com/submit-quote`, values);
+        await axios.post(
+          `https://aidf-backend-vite.onrender.com/submit-quote`,
+          values,
+          { email, password },
+          { withCredentials: true }
+        );
         myFormik.resetForm();
         toast.success("Request Submitted Successfully");
         closeModal();
@@ -505,7 +468,7 @@ const Skirting = () => {
     const productKey = Object.keys(products).find(
       (key) => products[key].name === productName
     );
-    
+
     if (productKey && products[productKey].brochure) {
       window.open(products[productKey].brochure, "_blank");
     } else {
@@ -617,7 +580,10 @@ const Skirting = () => {
         { label: "Alloy", value: "Is Alloy" },
         { label: "Color", value: "Silver" },
         { label: "Length", value: "80 mm" },
-        { label: "Application", value: "Furniture, Windows & Doors, Decorations" },
+        {
+          label: "Application",
+          value: "Furniture, Windows & Doors, Decorations",
+        },
       ],
     },
     product5: {
@@ -625,7 +591,8 @@ const Skirting = () => {
       name: "Profiles For Floor PVC Edge Profile",
       price: "₹150 / Kg",
       image: product5,
-      description: "PVC Edge Profile to be used with floorings up to 5mm thick.",
+      description:
+        "PVC Edge Profile to be used with floorings up to 5mm thick.",
       details: [
         { label: "Design", value: "Customized" },
         { label: "Material", value: "PVC" },
@@ -701,7 +668,9 @@ const Skirting = () => {
           <h3 className="skirting-product-title">{product.name}</h3>
           <div className="skirting-product-price">{product.price}</div>
           <div className="skirting-product-description-container">
-            <p className="skirting-product-description">{product.description}</p>
+            <p className="skirting-product-description">
+              {product.description}
+            </p>
           </div>
           <div className="skirting-product-details-container">
             <ul className="skirting-product-details">
@@ -759,7 +728,11 @@ const Skirting = () => {
           <h2 className="skirting-section-title" data-aos="fade-up">
             Our Skirting Products
           </h2>
-          <p className="skirting-section-subtitle" data-aos="fade-up" data-aos-delay="100">
+          <p
+            className="skirting-section-subtitle"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             High-quality aluminum profiles for various applications
           </p>
           <div className="skirting-product-grid">
@@ -786,8 +759,12 @@ const Skirting = () => {
                     className="skirting-modal-product-image"
                   />
                 </div>
-                <h3 className="skirting-modal-product-title">{currentProduct.name}</h3>
-                <div className="skirting-modal-price">{currentProduct.price}</div>
+                <h3 className="skirting-modal-product-title">
+                  {currentProduct.name}
+                </h3>
+                <div className="skirting-modal-price">
+                  {currentProduct.price}
+                </div>
                 <div className="skirting-modal-description-container">
                   <p className="skirting-modal-description">
                     {currentProduct.description}
@@ -797,8 +774,12 @@ const Skirting = () => {
                   <ul className="skirting-modal-specs">
                     {currentProduct.details.map((detail, index) => (
                       <li key={index}>
-                        <span className="skirting-modal-spec-label">{detail.label}:</span>{" "}
-                        <span className="skirting-modal-spec-value">{detail.value}</span>
+                        <span className="skirting-modal-spec-label">
+                          {detail.label}:
+                        </span>{" "}
+                        <span className="skirting-modal-spec-value">
+                          {detail.value}
+                        </span>
                       </li>
                     ))}
                   </ul>
@@ -812,8 +793,16 @@ const Skirting = () => {
                   We'll contact you shortly with the quote details
                 </p>
                 <form onSubmit={myFormik.handleSubmit}>
-                  <input type="hidden" name="name" value={currentProduct.name} />
-                  <input type="hidden" name="price" value={currentProduct.price} />
+                  <input
+                    type="hidden"
+                    name="name"
+                    value={currentProduct.name}
+                  />
+                  <input
+                    type="hidden"
+                    name="price"
+                    value={currentProduct.price}
+                  />
                   <div className="skirting-form-group">
                     <label htmlFor="phone">Phone Number*</label>
                     <input
