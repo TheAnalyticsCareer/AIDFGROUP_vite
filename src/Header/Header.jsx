@@ -46,7 +46,7 @@
 //     onSubmit: async (values) => {
 //       try {
 //         setFormStatus({ submitting: true, success: false, error: false });
-//         await axios.post(`http://localhost:5588/submit-enquiry`, values);
+//         await axios.post(`https://aidf-backend-vite.onrender.com/submit-enquiry`, values);
 //         setFormStatus({ submitting: false, success: true, error: false });
 //         myFormik.resetForm();
 //       } catch (err) {
@@ -568,7 +568,7 @@ const Header = () => {
     onSubmit: async (values) => {
       try {
         setFormStatus({ submitting: true, success: false, error: false });
-        await axios.post(`http://localhost:5588/submit-enquiry`, values);
+        await axios.post(`https://aidf-backend-vite.onrender.com/submit-enquiry`, values);
         setFormStatus({ submitting: false, success: true, error: false });
         myFormik.resetForm();
       } catch (err) {
@@ -879,7 +879,7 @@ const Header = () => {
                       <a style={{ color: 'black', textDecoration: 'none' }} href="/carpets">Carpets</a>
                       <a style={{ color: 'black', textDecoration: 'none' }} href="/flooring">Flooring</a>
                       <a style={{ color: 'black', textDecoration: 'none' }} href="/Aluminium_Glass_Partitions">Aluminium  Glass Partition</a>
-                      <a style={{ color: 'black', textDecoration: 'none' }} href="/Moreproducts">More..</a>
+                      <a style={{ color: 'black', textDecoration: 'none' }} href="/More">More</a>
 
                     </div>
                   </li>

@@ -171,13 +171,13 @@ const HeroSection = () => {
           </div>
         </a>
         
-        <a href="/Moreproducts" className="hs-product-card">
+        <a href="/More" className="hs-product-card">
           <div className="hs-card-image-container">
             <img src={card5} alt="More Products" className="hs-card-image" />
             <div className="hs-image-overlay"></div>
           </div>
           <div className="hs-card-content">
-            <h3 className="hs-card-title">More...</h3>
+            <h3 className="hs-card-title">More</h3>
             <div className="hs-card-arrow">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path

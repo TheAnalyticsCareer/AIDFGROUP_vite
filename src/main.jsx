@@ -107,7 +107,7 @@ root.render(
             <Route path="/aluminum-profile-skirtings" element={<Skirting />} />
             <Route path="/carpets" element={<Carpet />} />
             <Route path="/Aluminium_Glass_Partitions" element={<Aluminium_glass />} />
-            <Route path="Moreproducts" element={<Moreproducts/>}/>
+            <Route path="More" element={<Moreproducts/>}/>
             <Route path="flooring" element={<Flooring />} />
             {/* <Route path="blogs" element={<Blogs />} /> */}
             {/* <Route path="blogDetails/:blogId" element={<BlogDetail />} /> */}
