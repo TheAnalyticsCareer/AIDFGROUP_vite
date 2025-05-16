@@ -43,7 +43,7 @@
 
 //     onSubmit: async (values) => {
 //       try {
-//         await axios.post(`https://aidf-backend-vite.onrender.com/submit-enquiry`, values);
+//         await axios.post(`http://localhost:5588/submit-enquiry`, values);
 //         toast.success("Message Sent Successfully")
 
 //         myFormik.resetForm();
@@ -396,7 +396,7 @@ const LocateUs = () => {
     onSubmit: async (values) => {
       setIsSubmitting(true);
       try {
-        await axios.post(`https://aidf-backend-vite.onrender.com/submit-enquiry`, values);
+        await axios.post(`http://localhost:5588/submit-enquiry`, values);
         toast.success("Message Sent Successfully");
         myFormik.resetForm();
       } catch (err) {
