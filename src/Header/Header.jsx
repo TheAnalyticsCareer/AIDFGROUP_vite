@@ -46,7 +46,7 @@
 //     onSubmit: async (values) => {
 //       try {
 //         setFormStatus({ submitting: true, success: false, error: false });
-//         await axios.post(`http://localhost:5588/submit-enquiry`, values);
+//         await axios.post(`https://aidf-backend-vite.onrender.com/submit-enquiry`, values);
 //         setFormStatus({ submitting: false, success: true, error: false });
 //         myFormik.resetForm();
 //       } catch (err) {
@@ -568,7 +568,7 @@ const Header = () => {
     onSubmit: async (values) => {
       try {
         setFormStatus({ submitting: true, success: false, error: false });
-        await axios.post(`http://localhost:5588/submit-enquiry`, values);
+        await axios.post(`https://aidf-backend-vite.onrender.com/submit-enquiry`, values);
         setFormStatus({ submitting: false, success: true, error: false });
         myFormik.resetForm();
       } catch (err) {

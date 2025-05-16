@@ -45,7 +45,7 @@
 //     onSubmit: async (values) => {
 //       setIsSubmitting(true);
 //       try {
-//         await axios.post(`http://localhost:5588/submit-quote`, values);
+//         await axios.post(`https://aidf-backend-vite.onrender.com/submit-quote`, values);
 //         myFormik.resetForm();
 //         toast.success("Request Submitted Successfully");
 //         closeModal();
@@ -455,7 +455,7 @@ const Aluminium_glass = () => {
     onSubmit: async (values) => {
       setIsSubmitting(true);
       try {
-        await axios.post(`http://localhost:5588/submit-quote`, values);
+        await axios.post(`https://aidf-backend-vite.onrender.com/submit-quote`, values);
         myFormik.resetForm();
         toast.success("Request Submitted Successfully");
         closeModal();
