@@ -1,4 +1,4 @@
-/* Footer Styles - All classes prefixed with aidf- to prevent conflicts */
+/* Footer Styles */
 .aidf-footer-container {
   background: #2a2a2a;
   color: #ffffff;
@@ -42,9 +42,9 @@
 
 .aidf-footer-tagline p {
   margin: 0;
-  font-size: 0.95rem;
+  font-size: 0.9rem;
   color: #f1f1f1;
-  line-height: 1.5;
+  line-height: 1.4;
   max-width: 300px;
 }
 
@@ -64,7 +64,7 @@
 }
 
 .aidf-social-title {
-  font-size: 1.1rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   color: #f1f1f1;
   font-weight: 500;
@@ -82,7 +82,7 @@
   color: #f1f1f1;
   text-decoration: none;
   transition: color 0.3s ease;
-  font-size: 1rem;
+  font-size: 0.95rem;
   font-weight: 500;
 }
 
@@ -94,11 +94,12 @@
   display: flex;
   gap: 1rem;
   justify-content: center;
+  margin-top: 0.5rem;
 }
 
 .aidf-social-icon {
-  width: 42px;
-  height: 42px;
+  width: 38px;
+  height: 38px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   display: flex;
@@ -108,8 +109,8 @@
 }
 
 .aidf-social-icon img {
-  width: 20px;
-  height: 20px;
+  width: 18px;
+  height: 18px;
   filter: brightness(0) invert(1);
   transition: filter 0.3s ease;
 }
@@ -125,27 +126,25 @@
 
 /* Navigation Links */
 .aidf-footer-nav {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1.5rem;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
 }
 
 .aidf-footer-column {
-  flex: 1;
-  min-width: 160px;
-  max-width: 220px;
-  margin-bottom: 0rem;
+  margin-bottom: 0;
 }
 
 .aidf-footer-heading {
-  font-size: 1.05rem;
-  margin-bottom: 1.2rem;
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
   color: #ffffff;
   font-weight: 600;
   position: relative;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
 .aidf-footer-heading::after {
@@ -153,7 +152,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 40px;
+  width: 30px;
   height: 2px;
   background: #61CE70;
 }
@@ -165,13 +164,13 @@
 }
 
 .aidf-footer-list-item {
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
 }
 
 .aidf-footer-column a {
   color: #b1b1b1;
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   transition: all 0.3s ease;
   display: inline-block;
   line-height: 1.4;
@@ -179,19 +178,19 @@
 
 .aidf-footer-column a:hover {
   color: #ffffff;
-  transform: translateX(5px);
+  transform: translateX(3px);
 }
 
 /* Bottom Section */
 .aidf-footer-bottom {
   text-align: center;
-  padding: 1.5rem 0;
+  padding: 1rem 0;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .aidf-footer-bottom p {
   margin: 0;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   color: #b1b1b1;
 }
 
@@ -228,31 +227,27 @@
   }
 
   .aidf-footer-nav {
-    gap: 0rem;
+    gap: 1rem;
   }
 
-  .aidf-social-icons {
-    gap: 1.5rem;
+  .aidf-footer-heading {
+    font-size: 0.85rem;
+  }
+
+  .aidf-footer-column a {
+    font-size: 0.78rem;
   }
 }
 
 @media (min-width: 1024px) {
   .aidf-footer-nav {
-    flex-wrap: nowrap;
-  }
-}
-
-@media (max-width: 768px) {
-  .aidf-footer-nav {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 }
 
 @media (max-width: 480px) {
   .aidf-footer-nav {
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .aidf-footer-brand {
@@ -263,26 +258,11 @@
   .aidf-footer-logo {
     height: 60px;
   }
-
-  .aidf-social-icon {
-    width: 44px;
-    height: 44px;
-  }
-
-  .aidf-social-icon img {
-    width: 22px;
-    height: 22px;
-  }
-
-  .aidf-phone-number {
-    font-size: 1.05rem;
-  }
 }
 
 @media (max-width: 360px) {
   .aidf-footer-nav {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
   }
 
   .aidf-footer-column {
@@ -296,9 +276,5 @@
 
   .aidf-footer-column a:hover {
     transform: none;
-  }
-
-  .aidf-social-icons {
-    gap: 0.8rem;
   }
 }
