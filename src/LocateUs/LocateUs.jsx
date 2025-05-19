@@ -613,9 +613,10 @@ const LocateUs = () => {
                   className="locate-us__form-input"
                 >
                   <option value="">I'm interested in...</option>
-                  <option value="Skirting And Profile">Skirting & Profile</option>
-                  <option value="Carpet">Carpet</option>
+                  <option value="Skirting And Profile">Aluminum Profile and Skirtings</option>
+                  <option value="Carpet">Carpets</option>
                   <option value="Flooring">Flooring</option>
+                  <option value="flooring">Aluminium Glass Partitions</option>
                   <option value="other">Other</option>
                 </select>
               </div>

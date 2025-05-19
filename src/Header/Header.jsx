@@ -1167,6 +1167,7 @@ const Header = () => {
                         </option>
                         <option value="carpets">Carpets</option>
                         <option value="flooring">Flooring</option>
+                        <option value="flooring">Aluminium Glass Partitions</option>
                         <option value="other">Other Services</option>
                       </select>
                       <svg className="header-cf-input-icon" viewBox="0 0 24 24">
