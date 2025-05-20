@@ -1,11 +1,6 @@
-
-
-
-
-
-import React from 'react';
-import { color, motion } from 'framer-motion';
-import './HomeServices.css';
+import React from "react";
+import { color, motion } from "framer-motion";
+import "./HomeServices.css";
 import icon_1 from "./HomeImg/service_icon1.png";
 import icon_2 from "./HomeImg/service_icon2.png";
 import icon_3 from "./HomeImg/service_icon3.png";
@@ -15,22 +10,24 @@ const HomeServices = () => {
     {
       id: 1,
       title: "INSTALLATION",
-      description: "Precision installation of a wide variety of windows and doors.",
-      icon: icon_1
+      description:
+        "Precision installation of a wide variety of windows and doors.",
+      icon: icon_1,
     },
     {
       id: 2,
       title: "REPAIR",
-      description: "Quick and efficient repairs for damaged or malfunctioning windows.",
+      description:
+        "Quick and efficient repairs for damaged or malfunctioning windows.",
       icon: icon_2,
-   
     },
     {
       id: 3,
       title: "CUSTOMIZATION",
-      description: "Install custom windows & doors to perfectly match your home.",
-      icon: icon_3
-    }
+      description:
+        "Install custom windows & doors to perfectly match your home.",
+      icon: icon_3,
+    },
   ];
 
   // Animation variants
@@ -40,9 +37,9 @@ const HomeServices = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.2,
-        delayChildren: 0.3
-      }
-    }
+        delayChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
@@ -52,38 +49,41 @@ const HomeServices = () => {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
-    <section className="home-services-section" style={{ backgroundColor: ' #fafafa' }}>
+    <section
+      className="home-services-section"
+      style={{ backgroundColor: " #fafafa" }}
+    >
       <div className="services-container">
-        <motion.div 
+        <motion.div
           className="services-header"
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, margin: "-100px" }}
           variants={containerVariants}
         >
-          <motion.h4 
-            className="services-subtitle" 
-            style={{ color: '#61CE70' }}
+          <motion.h4
+            className="services-subtitle"
+            style={{ color: "#61CE70" }}
             variants={itemVariants}
           >
             SERVICE MAKE YOU HAPPIER LIFE!
           </motion.h4>
-          <motion.h3 
-            className="services-title" 
-            style={{ color: '#0F2A1D' }}
+          <motion.h3
+            className="services-title"
+            style={{ color: "#0F2A1D" }}
             variants={itemVariants}
           >
-             PROFESSIONAL FLOORING SOLUTIONS FOR HOMES & OFFICES
+            PROFESSIONAL FLOORING SOLUTIONS FOR HOMES & OFFICES
           </motion.h3>
         </motion.div>
 
-        <motion.div 
+        <motion.div
           className="home-services-grid"
           initial="hidden"
           whileInView="visible"
@@ -91,43 +91,39 @@ const HomeServices = () => {
           variants={containerVariants}
         >
           {services.map((service) => (
-            <motion.div 
-              key={service.id} 
+            <motion.div
+              key={service.id}
               className="service-card"
-              style={{ backgroundColor: '#FFFFFF' }}
+              style={{ backgroundColor: "#FFFFFF" }}
               variants={itemVariants}
-              whileHover={{ 
+              whileHover={{
                 y: -10,
-                boxShadow: '0 15px 30px rgba(15, 42, 29, 0.1)'
+                boxShadow: "0 15px 30px rgba(15, 42, 29, 0.1)",
               }}
             >
-              <div 
+              <div
                 className="service-icon-container"
-                style={{ backgroundColor: '#6EC1E4' }}
+                style={{ backgroundColor: "#6EC1E4" }}
               >
-                <img 
-                  src={service.icon} 
-                  alt={service.title} 
+                <img
+                  src={service.icon}
+                  alt={service.title}
                   className="service-icon"
-
                 />
               </div>
-              
-              <h6 
-                className="service-card-title"
-                style={{ color: '#54595F' }}
-              >
+
+              <h6 className="service-card-title" style={{ color: "#54595F" }}>
                 {service.title}
               </h6>
-              
-              <p 
-                className="service-card-text"
-                style={{ color: 'black' }}
-              >
+
+              <p className="service-card-text" style={{ color: "black" }}>
                 {service.description}
               </p>
-              
-              <div className="service-card-line" style={{ backgroundColor: 'red' }}></div>
+
+              <div
+                className="service-card-line"
+                style={{ backgroundColor: "red" }}
+              ></div>
             </motion.div>
           ))}
         </motion.div>
@@ -137,7 +133,3 @@ const HomeServices = () => {
 };
 
 export default HomeServices;
-
-
-
-

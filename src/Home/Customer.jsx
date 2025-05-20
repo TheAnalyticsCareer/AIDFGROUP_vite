@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -74,7 +72,10 @@ const Customer = () => {
   ];
 
   return (
-    <section className="customer-section" style={{ paddingTop: "30px", marginBottom:"10px"}}>
+    <section
+      className="customer-section"
+      style={{ paddingTop: "30px", marginBottom: "10px" }}
+    >
       <h2
         style={{ color: "#61CE70" }}
         className="text-5xl font-extrabold text-center mb-20 text-gray-800 "

@@ -1,5 +1,3 @@
-
-
 import React from "react";
 import "./AboutSection.css";
 import aboutImage from "./HomeImg/about-img.jpg";

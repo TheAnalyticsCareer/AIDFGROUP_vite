@@ -1,7 +1,3 @@
-
-
-
-
 import { useState, useEffect, useRef } from "react";
 import img1 from "./NewLaunchImg/ULTRA- Glass Partition.jpg";
 import img2 from "./NewLaunchImg/ULTRA STRONG- Glass Partition.jpg";
@@ -19,11 +15,36 @@ const NewLaunch = () => {
   const timerRef = useRef(null);
 
   const projects = [
-    { id: 1, image: img1, title: "ULTRA- Glass Partition", location: "Bangalore" },
-    { id: 2, image: img2, title: "ULTRA STRONG- Glass Partition", location: "Mumbai" },
-    { id: 3, image: img3, title: "ULTRA MAX- Glass Partition", location: "Goa" },
-    { id: 4, image: img4, title: "Aluminium Glass Partition", location: "Pune" },
-    { id: 5, image: img5, title: "STILE DOORS- Glass Partition", location: "Delhi" },
+    {
+      id: 1,
+      image: img1,
+      title: "ULTRA- Glass Partition",
+      location: "Bangalore",
+    },
+    {
+      id: 2,
+      image: img2,
+      title: "ULTRA STRONG- Glass Partition",
+      location: "Mumbai",
+    },
+    {
+      id: 3,
+      image: img3,
+      title: "ULTRA MAX- Glass Partition",
+      location: "Goa",
+    },
+    {
+      id: 4,
+      image: img4,
+      title: "Aluminium Glass Partition",
+      location: "Pune",
+    },
+    {
+      id: 5,
+      image: img5,
+      title: "STILE DOORS- Glass Partition",
+      location: "Delhi",
+    },
     { id: 6, image: img6, title: "Oak Walnut Art Tiles", location: "Dehradun" },
   ];
 
@@ -108,7 +129,7 @@ const NewLaunch = () => {
           className="carousel-button prev-button"
           onClick={prevSlide}
           aria-label="Previous slide"
-        > 
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 24 24"
@@ -120,8 +141,7 @@ const NewLaunch = () => {
           >
             <polyline points="15 18 9 12 15 6"></polyline>
           </svg>
-          
-        </button> 
+        </button>
 
         <button
           className="carousel-button next-button"
@@ -140,8 +160,6 @@ const NewLaunch = () => {
             <polyline points="9 18 15 12 9 6"></polyline>
           </svg>
         </button>
-
-       
       </div>
     </section>
   );

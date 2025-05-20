@@ -1,14 +1,12 @@
-
-
-import React, { useRef } from 'react';
-import { motion } from 'framer-motion';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination, Autoplay, Navigation } from 'swiper/modules'; // Updated import path
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/navigation';
-import 'swiper/css/autoplay';
-import './RecentProjects.css';
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination, Autoplay, Navigation } from "swiper/modules"; // Updated import path
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+import "swiper/css/autoplay";
+import "./RecentProjects.css";
 
 import project_1 from "./HomeImg/p1.jpg";
 import project_2 from "./HomeImg/p2.png";
@@ -22,7 +20,7 @@ const RecentProjects = () => {
     { id: 2, title: "Hospitality & Banquet Carpet", image: project_2 },
     { id: 3, title: "Wall Covering", image: project_3 },
     { id: 4, title: "Laminate Wooden Flooring", image: project_4 },
-    { id: 5, title: "Modular Carpet Tiles", image: project_5 }
+    { id: 5, title: "Modular Carpet Tiles", image: project_5 },
   ];
 
   const swiperRef = useRef(null);
@@ -33,9 +31,9 @@ const RecentProjects = () => {
       opacity: 1,
       transition: {
         staggerChildren: 0.1,
-        delayChildren: 0.3
-      }
-    }
+        delayChildren: 0.3,
+      },
+    },
   };
 
   const itemVariants = {
@@ -45,14 +43,18 @@ const RecentProjects = () => {
       opacity: 1,
       transition: {
         duration: 0.6,
-        ease: "easeOut"
-      }
-    }
+        ease: "easeOut",
+      },
+    },
   };
 
   return (
-    <section className="recent-projects-section" style={{ backgroundColor: '#fafafa' }} id="recentproject">
-      <motion.div 
+    <section
+      className="recent-projects-section"
+      style={{ backgroundColor: "#fafafa" }}
+      id="recentproject"
+    >
+      <motion.div
         className="recent-projects-container"
         initial="hidden"
         whileInView="visible"
@@ -60,8 +62,10 @@ const RecentProjects = () => {
         variants={containerVariants}
       >
         <motion.div className="recent-section-header" variants={itemVariants}>
-          <h3 className="recent-section-title" style={{ color: '#0F2A1D' }}>RECENT PRODUCTS</h3>
-          <h4 className="recent-section-subtitle" style={{ color: '#61CE70' }}>
+          <h3 className="recent-section-title" style={{ color: "#0F2A1D" }}>
+            RECENT PRODUCTS
+          </h3>
+          <h4 className="recent-section-subtitle" style={{ color: "#61CE70" }}>
             Transform your space, transform your life.
           </h4>
         </motion.div>
@@ -75,43 +79,49 @@ const RecentProjects = () => {
             speed={300}
             touchRatio={0.7}
             resistanceRatio={0}
-            pagination={{ 
+            pagination={{
               clickable: true,
-              el: '.custom-pagination',
-              bulletClass: 'custom-bullet',
-              bulletActiveClass: 'custom-bullet-active'
+              el: ".custom-pagination",
+              bulletClass: "custom-bullet",
+              bulletActiveClass: "custom-bullet-active",
             }}
             navigation={{
-              nextEl: '.swiper-button-next',
-              prevEl: '.swiper-button-prev',
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
             }}
-            autoplay={{ 
-              delay: 2000, 
-              disableOnInteraction: false 
+            autoplay={{
+              delay: 2000,
+              disableOnInteraction: false,
             }}
             breakpoints={{
               640: { slidesPerView: 2 },
-              1024: { slidesPerView: 3 }
+              1024: { slidesPerView: 3 },
             }}
             className="project-swiper"
           >
             {projects.map((project) => (
               <SwiperSlide key={project.id}>
-                <motion.div 
+                <motion.div
                   className="recent-project-card"
                   whileHover={{ scale: 1.02 }}
                   transition={{ type: "spring", stiffness: 400, damping: 10 }}
                 >
                   <div className="recent-project-image-container">
-                    <img 
-                      src={project.image} 
-                      alt={project.title} 
+                    <img
+                      src={project.image}
+                      alt={project.title}
                       className="recent-project-image"
                     />
-                    <div className="recent-image-overlay" style={{ backgroundColor: 'rgba(255, 255, 255, 0.3)' }}></div>
+                    <div
+                      className="recent-image-overlay"
+                      style={{ backgroundColor: "rgba(255, 255, 255, 0.3)" }}
+                    ></div>
                   </div>
-                  <div className="recent-project-title" style={{ backgroundColor: 'grey' }}>
-                    <h4 style={{ color: '#E3EED4' }}>{project.title}</h4>
+                  <div
+                    className="recent-project-title"
+                    style={{ backgroundColor: "grey" }}
+                  >
+                    <h4 style={{ color: "#E3EED4" }}>{project.title}</h4>
                   </div>
                 </motion.div>
               </SwiperSlide>
@@ -119,32 +129,55 @@ const RecentProjects = () => {
           </Swiper>
 
           <div className="recent-swiper-controls">
-            <div className="swiper-button-prev" style={{ color: '#0F2A1D' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M15 18l-6-6 6-6"/>
+            <div className="swiper-button-prev" style={{ color: "#0F2A1D" }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M15 18l-6-6 6-6" />
               </svg>
             </div>
             <div className="recent-custom-pagination"></div>
-            <div className="swiper-button-next" style={{ color: '#0F2A1D' }}>
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 18l6-6-6-6"/>
+            <div className="swiper-button-next" style={{ color: "#0F2A1D" }}>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              >
+                <path d="M9 18l6-6-6-6" />
               </svg>
             </div>
           </div>
         </motion.div>
 
-        <motion.div className="recent-view-more-container" variants={itemVariants}>
+        <motion.div
+          className="recent-view-more-container"
+          variants={itemVariants}
+        >
           <a href="/products" className="recent-view-more-link">
-            <motion.button 
+            <motion.button
               className="view-more-btn"
-              style={{ 
-                backgroundColor: 'red',
-                color: '#E3EED4'
+              style={{
+                backgroundColor: "red",
+                color: "#E3EED4",
               }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
-                backgroundColor: 'grey',
-                boxShadow: '0 8px 20px rgba(15, 42, 29, 0.3)'
+                backgroundColor: "grey",
+                boxShadow: "0 8px 20px rgba(15, 42, 29, 0.3)",
               }}
               whileTap={{ scale: 0.98 }}
             >
