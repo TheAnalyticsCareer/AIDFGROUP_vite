@@ -17,10 +17,7 @@ import product4 from "./img/aluminium_glass/transparent-laminated-glass-partitio
 import product5 from "./img/aluminium_glass/slim-line.webp";
 import product6 from "./img/aluminium_glass/aluminium-grid-partition-500x500.webp";
 
-// PDF brochures
-// import p1 from "./img/aluminium_glass/curved-glass-partition-brochure.pdf";
-// import p2 from "./img/aluminium_glass/slim-glass-partition-brochure.pdf";
-// import p3 from "./img/aluminium_glass/acoustic-glass-partition-brochure.pdf";
+
 
 const Aluminium_glass = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -56,17 +53,7 @@ const Aluminium_glass = () => {
     },
   });
 
-  // const downloadBrochure = (productName) => {
-  //   const productKey = Object.keys(products).find(
-  //     (key) => products[key].name === productName
-  //   );
-
-  //   if (productKey && products[productKey].brochure) {
-  //     window.open(products[productKey].brochure, "_blank");
-  //   } else {
-  //     toast.error("Brochure not available for this product");
-  //   }
-  // };
+ 
 
   useEffect(() => {
     if (isModalOpen && currentProduct) {

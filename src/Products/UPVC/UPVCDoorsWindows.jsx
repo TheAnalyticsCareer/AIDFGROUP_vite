@@ -45,7 +45,7 @@ const services = [
     description: "Elegant glass partitions for modern spaces",
     badge: "Modern",
     image: Aluminium_glass,
-    link: "/Aluminium_Glass_Partitions",
+    link: "/aluminium-glass-partitions",
   },
 ];
 
@@ -163,7 +163,7 @@ const UPVCDoorsWindows = () => {
                   <li>Professional installation for flawless results</li>
                 </ul>
                 <div className="upvc-explore-more">
-                  <Link to="/skirtingProfile" className="upvc-explore-button">
+                  <Link to="/aluminum-profile-skirtings" className="upvc-explore-button">
                     Explore Skirting Solutions
                   </Link>
                 </div>
@@ -198,8 +198,8 @@ const UPVCDoorsWindows = () => {
                   <li>Custom cutting and fitting services</li>
                 </ul>
                 <div className="upvc-explore-more">
-                  <Link to="/carpet" className="upvc-explore-button">
-                    Explore Carpet Collections
+                  <Link to="/carpets" className="upvc-explore-button">
+                    Explore Carpet 
                   </Link>
                 </div>
               </div>
@@ -236,7 +236,7 @@ const UPVCDoorsWindows = () => {
                 </ul>
                 <div className="upvc-explore-more">
                   <Link to="/flooring" className="upvc-explore-button">
-                    Explore Flooring Options
+                    Explore Flooring
                   </Link>
                 </div>
               </div>
@@ -273,7 +273,7 @@ const UPVCDoorsWindows = () => {
                   <li>Professional installation with minimal disruption</li>
                 </ul>
                 <div className="upvc-explore-more">
-                  <Link to="/Aluminium_glass" className="upvc-explore-button">
+                  <Link to="/aluminium-glass-partitions" className="upvc-explore-button">
                     Explore Glass Partitions
                   </Link>
                 </div>

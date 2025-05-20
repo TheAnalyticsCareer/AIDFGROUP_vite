@@ -151,7 +151,7 @@ const HeroSection = () => {
           </div>
         </a>
 
-        <a href="/Aluminium_Glass_Partitions" className="hs-product-card">
+        <a href="/aluminium-glass-partitions" className="hs-product-card">
           <div className="hs-card-image-container">
             <img src={card4} alt="Aluminium Glass Partition" className="hs-card-image" />
             <div className="hs-image-overlay"></div>

@@ -22,7 +22,7 @@ const Footer = () => {
   };
 
   const socialLinks = [
-    { icon: linkedIn, url: "/", alt: "LinkedIn" },
+    { icon: linkedIn, url: "https://www.linkedin.com/company/aidfgroup/?originalSubdomain=in", alt: "LinkedIn" },
     { icon: facebook, url: "/", alt: "Facebook" },
     { icon: whatsapp, url: "https://wa.me/918447595048", alt: "WhatsApp" },
     {
@@ -73,19 +73,19 @@ const Footer = () => {
     {
       title: "Glass Partition",
       links: [
-        { text: "Curved", url: "/Aluminium_Glass_Partitions" },
-        { text: "Slim", url: "/Aluminium_Glass_Partitions" },
-        { text: "Acoustic", url: "/Aluminium_Glass_Partitions" },
-        { text: "Grid", url: "/Aluminium_Glass_Partitions" },
-        { text: "Slimline", url: "/Aluminium_Glass_Partitions" },
+        { text: "Curved", url: "/aluminium-glass-partitions" },
+        { text: "Slim", url: "/aluminium-glass-partitions" },
+        { text: "Acoustic", url: "/aluminium-glass-partitions" },
+        { text: "Grid", url: "/aluminium-glass-partitions" },
+        { text: "Slimline", url: "/aluminium-glass-partitions" },
       ],
     },
     {
       title: "Support",
       links: [
-        { text: "Terms", url: "/terms&conditions" },
-        { text: "Privacy", url: "/privacy&policy" },
-        { text: "Contact", url: "/locate-us" },
+        { text: "Terms&Conditions", url: "/terms&conditions" },
+        { text: "Privacy&Policy", url: "/privacy&policy" },
+        { text: "Locate Us", url: "/locate-us" },
       ],
     },
   ];

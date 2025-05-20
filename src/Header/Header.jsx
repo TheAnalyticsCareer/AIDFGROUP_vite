@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Dialog, DialogContent, IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 import "./header.css";
-import brochure from "./img/brochure.pdf";
+import brochure from "../Header/img/aidfProfile.pdf";
 import aidfLogo from "./img/aidf_logo.png";
 import axios from "axios";
 import { useFormik } from "formik";
@@ -606,7 +606,7 @@ const Header = () => {
                       </a>
                       <a
                         style={{ color: "black", textDecoration: "none" }}
-                        href="/Aluminium_Glass_Partitions"
+                        href="/aluminium-glass-partitions"
                       >
                         Aluminium Glass Partition
                       </a>
@@ -741,7 +741,7 @@ const Header = () => {
                     </a>
                     <a href="/carpets">Carpets</a>
                     <a href="/flooring">Flooring</a>
-                    <a href="/Aluminium_Glass_Partitions">
+                    <a href="/aluminium-glass-partitions">
                       Aluminium Glass Partition
                     </a>
                     <a href="/Moreproducts">More</a>

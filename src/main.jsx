@@ -36,17 +36,16 @@ root.render(
             <Route path="/aluminum-profile-skirtings" element={<Skirting />} />
             <Route path="/carpets" element={<Carpet />} />
             <Route
-              path="/Aluminium_Glass_Partitions"
+              path="/aluminium-glass-partitions"
               element={<Aluminium_glass />}
             />
             <Route path="More" element={<Moreproducts />} />
             <Route path="flooring" element={<Flooring />} />
-            {/* <Route path="blogs" element={<Blogs />} /> */}
-            {/* <Route path="blogDetails/:blogId" element={<BlogDetail />} /> */}
+          
             <Route path="blogs" element={<BlogList />} />
             <Route path="blogSlider" element={<BlogSlider />} />
             <Route path="blogs/:id" element={<BlogDetails />} />
-            {/* <Route path="/static-blog/:id" element={<Detail />} /> */}
+           
             <Route path="contact" element={<ContactFormPopup />} />
           </Route>
         </Routes>
