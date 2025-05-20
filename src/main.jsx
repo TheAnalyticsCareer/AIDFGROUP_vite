@@ -1,4 +1,3 @@
-// src/index.js
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
@@ -41,11 +40,11 @@ root.render(
             />
             <Route path="More" element={<Moreproducts />} />
             <Route path="flooring" element={<Flooring />} />
-          
+
             <Route path="blogs" element={<BlogList />} />
             <Route path="blogSlider" element={<BlogSlider />} />
             <Route path="blogs/:id" element={<BlogDetails />} />
-           
+
             <Route path="contact" element={<ContactFormPopup />} />
           </Route>
         </Routes>
