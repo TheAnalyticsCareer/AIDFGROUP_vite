@@ -744,7 +744,7 @@ const Header = () => {
                     <a href="/aluminium-glass-partitions">
                       Aluminium Glass Partition
                     </a>
-                    <a href="/Moreproducts">More</a>
+                    <a href="/more">More</a>
                   </div>
                 </li>
 
