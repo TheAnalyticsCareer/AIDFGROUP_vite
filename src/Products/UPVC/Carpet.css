@@ -544,13 +544,14 @@
 @media (max-width: 1024px) {
   .carpet-modal-content {
     flex-direction: column;
-    max-height: 90vh;
+    max-height: 100vh;
+    margin-top: 100px;
   }
   
   .carpet-modal-left,
   .carpet-modal-right {
-    flex: none;
-    max-height: 50%;
+    flex: 1;
+    max-height: 50vh;
   }
 }
 

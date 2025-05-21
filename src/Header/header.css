@@ -768,6 +768,7 @@ a {
   padding: 0.7rem 0;
   color: #555;
   font-size: 0.9rem;
+  text-decoration: none;
 }
 
 .mobile_dropdown_menu a:hover {

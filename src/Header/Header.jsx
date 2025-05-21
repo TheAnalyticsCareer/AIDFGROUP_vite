@@ -612,7 +612,7 @@ const Header = () => {
                       </a>
                       <a
                         style={{ color: "black", textDecoration: "none" }}
-                        href="/More"
+                        href="/more"
                       >
                         More
                       </a>
@@ -749,13 +749,13 @@ const Header = () => {
                 </li>
 
                 <li className="mobile_nav_item">
-                  <a href="/static-blog" className="mobile_nav_link">
+                  <a href="/blogs" className="mobile_nav_link">
                     Blogs
                   </a>
                 </li>
 
                 <li className="mobile_nav_item">
-                  <a href="/locateUs" className="mobile_nav_link">
+                  <a href="/locate-us" className="mobile_nav_link">
                     Locate Us
                   </a>
                 </li>
