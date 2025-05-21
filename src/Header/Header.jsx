@@ -115,7 +115,7 @@ const Header = () => {
     setSearchResults([]);
     setShowResults(false);
   };
-
+// -------------------------------------enquiry form-----------------------------
   const myFormik = useFormik({
     initialValues: {
       name: "",
