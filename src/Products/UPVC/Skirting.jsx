@@ -10,7 +10,8 @@ import "./Skirting.css";
 
 // Image Imports
 import heroImage from "./img/skirting/heroImg2.jpg";
-import product1 from "./img/skirting/aluminum-screw-on-skirting-1000x1000.webp";
+import product1 from "./img/skirting/new_img.webp";
+// import product1 from "./img/skirting/aluminum-screw-on-skirting-1000x1000.webp";
 import product2 from "./img/skirting/easy-fix-modular-skirting-500x500.webp";
 import product3 from "./img/skirting/aluminium door.jpg";
 import product4 from "./img/skirting/aluminum-stuck-on-skirting-500x500.webp";
